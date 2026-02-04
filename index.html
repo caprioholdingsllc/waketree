@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tree Removal Triangle | Professional Tree Services That Keep Your Property Safe</title>
+    <meta name="description" content="Tree service in Wake County. Removal, trimming, and storm cleanup to protect your property across the Triangle.">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+        .header {
+            background: linear-gradient(135deg, #15803d 0%, #166534 100%);
+            color: white;
+            padding: 1rem 2rem;
+        }
+        .header-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 700;
+        }
+        .phone {
+            font-size: 1.3rem;
+            font-weight: 600;
+        }
+        .hero {
+            background: #166534;
+            color: white;
+            padding: 4rem 2rem;
+            text-align: center;
+        }
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+        .hero p {
+            font-size: 1.2rem;
+            opacity: 0.95;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 3rem 2rem;
+        }
+        .benefits-intro {
+            max-width: 900px;
+            margin: 0 auto 3rem auto;
+            text-align: center;
+        }
+        .benefits-intro h2 {
+            color: #15803d;
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+        .benefits-intro p {
+            font-size: 1.1rem;
+            color: #555;
+            line-height: 1.8;
+        }
+        .features-section {
+            background: #f0fdf4;
+            padding: 3rem 2rem;
+            margin: 0 -2rem 3rem -2rem;
+        }
+        .features-section h2 {
+            text-align: center;
+            color: #15803d;
+            font-size: 2rem;
+            margin-bottom: 2rem;
+        }
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .feature-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 8px;
+            border-top: 4px solid #166534;
+        }
+        .feature-card h3 {
+            color: #15803d;
+            margin-bottom: 1rem;
+            font-size: 1.3rem;
+        }
+        .feature-card .benefit {
+            color: #047857;
+            font-weight: 600;
+            margin-bottom: 0.75rem;
+        }
+        .feature-card p {
+            color: #666;
+            line-height: 1.7;
+        }
+        .services-section {
+            margin: 3rem 0;
+        }
+        .services-section h2 {
+            color: #15803d;
+            font-size: 2rem;
+            margin-bottom: 2rem;
+        }
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
+        }
+        .service-card {
+            background: #f8f9fa;
+            padding: 1.5rem;
+            border-radius: 8px;
+            border-left: 3px solid #166534;
+        }
+        .service-card h3 {
+            color: #15803d;
+            margin-bottom: 0.75rem;
+        }
+        .service-card p {
+            color: #666;
+            font-size: 0.95rem;
+        }
+        .why-section {
+            background: #fef3c7;
+            padding: 2.5rem;
+            border-radius: 8px;
+            margin: 3rem 0;
+        }
+        .why-section h2 {
+            color: #92400e;
+            margin-bottom: 1.5rem;
+        }
+        .why-list {
+            list-style: none;
+            padding: 0;
+        }
+        .why-list li {
+            padding: 0.75rem 0;
+            padding-left: 2rem;
+            position: relative;
+            color: #78350f;
+        }
+        .why-list li:before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: #15803d;
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+        .form-section {
+            background: white;
+            padding: 2.5rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            max-width: 700px;
+            margin: 3rem auto;
+        }
+        .form-section h2 {
+            color: #15803d;
+            margin-bottom: 1rem;
+            font-size: 2rem;
+            text-align: center;
+        }
+        .form-section .subtitle {
+            color: #666;
+            margin-bottom: 2rem;
+            text-align: center;
+        }
+        .form-group {
+            margin-bottom: 1.25rem;
+        }
+        label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 500;
+        }
+        input, select, textarea {
+            width: 100%;
+            padding: 0.75rem;
+            border: 2px solid #ddd;
+            border-radius: 4px;
+            font-size: 1rem;
+            font-family: inherit;
+        }
+        input:focus, select:focus, textarea:focus {
+            outline: none;
+            border-color: #166534;
+        }
+        textarea {
+            min-height: 100px;
+            resize: vertical;
+        }
+        .submit-btn {
+            background: linear-gradient(135deg, #15803d 0%, #166534 100%);
+            color: white;
+            padding: 1rem 2rem;
+            border: none;
+            border-radius: 4px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            cursor: pointer;
+            width: 100%;
+        }
+        .submit-btn:hover {
+            opacity: 0.95;
+        }
+        .footer {
+            background: #2c3e50;
+            color: white;
+            padding: 2rem;
+            text-align: center;
+        }
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2rem;
+            }
+            .header-content {
+                flex-direction: column;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="header-content">
+            <div class="logo">Tree Removal Triangle</div>
+            <div class="phone">📞 (919) 635-9141</div>
+        </div>
+    </header>
+
+    <section class="hero">
+        <h1>Professional Tree Services That Keep Your Property Safe</h1>
+        <p>Expert tree removal, trimming, and storm cleanup across Wake County.</p>
+    </section>
+
+    <div class="container">
+        <div class="benefits-intro">
+            <h2>The Benefits of Professional Tree Service</h2>
+            <p>Proper tree care protects your home, increases property value, and prevents expensive damage. Professional service means safe removal and expert maintenance.</p>
+        </div>
+
+        <section class="features-section">
+            <h2>What Makes Our Service Valuable</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <h3>🏠 Protect Your Property</h3>
+                    <div class="benefit">Benefit: Prevent expensive damage</div>
+                    <p>Dead trees and overhanging branches threaten your roof, power lines, and structures. We identify and remove hazards before they cause thousands in damage.</p>
+                </div>
+
+                <div class="feature-card">
+                    <h3>⚡ Safety First</h3>
+                    <div class="benefit">Benefit: No risk to you or your home</div>
+                    <p>Tree work is dangerous. We have proper equipment, insurance, and training. No climbing ladders with chainsaws or risking injury.</p>
+                </div>
+
+                <div class="feature-card">
+                    <h3>🌳 Expert Tree Health</h3>
+                    <div class="benefit">Benefit: Keep healthy trees thriving</div>
+                    <p>Proper trimming extends tree life and prevents disease. We know when to trim, how much, and which branches to remove for optimal health.</p>
+                </div>
+
+                <div class="feature-card">
+                    <h3>🚗 Complete Cleanup</h3>
+                    <div class="benefit">Benefit: No mess left behind</div>
+                    <p>We handle all debris removal, stump grinding, and cleanup. You don't deal with massive piles of branches or finding someone to haul them away.</p>
+                </div>
+
+                <div class="feature-card">
+                    <h3>💡 Prevent Storm Damage</h3>
+                    <div class="benefit">Benefit: Peace of mind in bad weather</div>
+                    <p>Trimmed trees withstand storms better. Remove dead branches before they fall on your house during the next thunderstorm.</p>
+                </div>
+
+                <div class="feature-card">
+                    <h3>📈 Increase Property Value</h3>
+                    <div class="benefit">Benefit: Better curb appeal</div>
+                    <p>Well-maintained trees and professional removal of dead trees makes your property look better and increases market value.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="services-section">
+            <h2>Tree Services</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <h3>Tree Removal</h3>
+                    <p>Safe removal of dead, diseased, or hazardous trees.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Tree Trimming</h3>
+                    <p>Professional pruning and trimming for health and safety.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Stump Grinding</h3>
+                    <p>Remove stumps below ground level. Smooth, clean finish.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Storm Damage</h3>
+                    <p>Emergency tree removal after storms and high winds.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Hazard Assessment</h3>
+                    <p>Identify dangerous trees before they become problems.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Land Clearing</h3>
+                    <p>Clear trees for construction or landscape projects.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="why-section">
+            <h2>Why Choose Professional Tree Service</h2>
+            <ul class="why-list">
+                <li>Fully insured for property protection</li>
+                <li>Professional equipment for safe removal</li>
+                <li>Complete cleanup and debris removal</li>
+                <li>Expert knowledge of tree health</li>
+                <li>Storm damage emergency response</li>
+                <li>Fair pricing with detailed estimates</li>
+            </ul>
+        </section>
+
+        <section class="form-section">
+            <h2>Request Tree Service</h2>
+            <p class="subtitle">Get a free estimate for tree work</p>
+            
+            <form id="leadForm" action="https://hook.us2.make.com/gzcbxb8x2e5xph37kjhm48ur4khvh7ir" method="POST">
+                <input type="hidden" name="site_id" value="WAKE-TREE-001">
+                <input type="hidden" name="market" value="Wake County">
+                <input type="hidden" name="industry" value="Tree Service">
+                <input type="hidden" name="lead_type" value="Service Request">
+                <input type="hidden" name="source_url" value="treeremovaltriangle.com">
+                
+                <div class="form-group">
+                    <label for="name">Name *</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Phone *</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email *</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="address">Property Address *</label>
+                    <input type="text" id="address" name="address" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="service_type">Service Needed *</label>
+                    <select id="service_type" name="service_type" required>
+                        <option value="">Select...</option>
+                        <option value="Tree Removal">Tree Removal</option>
+                        <option value="Tree Trimming">Tree Trimming</option>
+                        <option value="Stump Grinding">Stump Grinding</option>
+                        <option value="Storm Damage">Storm Damage</option>
+                        <option value="Land Clearing">Land Clearing</option>
+                        <option value="Free Estimate">Free Estimate</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="details">Project Details *</label>
+                    <textarea id="details" name="details" required placeholder="Describe your tree service needs..."></textarea>
+                </div>
+
+                <button type="submit" class="submit-btn">Request Estimate</button>
+            </form>
+        </section>
+    </div>
+
+    <footer class="footer">
+        <p>&copy; 2024 Tree Removal Triangle. Professional Tree Services.</p>
+    </footer>
+
+    <script>
+        document.getElementById('leadForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const formData = new FormData(this);
+            
+            fetch(this.action, {
+                method: 'POST',
+                body: formData,
+                mode: 'no-cors'
+            }).then(() => {
+                window.location.href = 'thanks.html';
+            }).catch(() => {
+                window.location.href = 'thanks.html';
+            });
+        });
+    </script>
+</body>
+</html>
